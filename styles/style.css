@@ -1,0 +1,147 @@
+:root{
+    --pr-bg-color: #3b577d;
+    --sc-bg-color: #3b577d;
+    --font-color: #ddf5f7;
+    --pr-effect-color: #c0d9e5;
+    --sc-effect-color: #FB2576;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    background: var(--pr-bg-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background: url(../images/banner/banner2.jpg) no-repeat;
+    background-size: cover;
+    width: 98%;
+    height: 88%;
+    position: relative;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    max-width: 100px;
+    height: 2.8em;
+    padding-top: 0.5em; 
+    background-color: var(--sc-bg-color);
+}
+
+nav{
+    justify-content: flex-start;
+    width: 100%;
+    /* border: 2px solid white; */
+    position: relative;
+    height: 4em;
+}
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.access{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+   position: absolute;
+}
+li ,a{
+    color: var(--font-color);
+    list-style: none;
+    padding-left: 0.4em;
+    font-weight: 700;
+}
+li ,a:hover{
+    color: var(--pr-bg-color);
+}
+a{
+    text-decoration: none;
+}
+
+
+.photo{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+#intro{
+    color: var(--font-color);
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 0;
+    padding-left: 25px;
+    padding-bottom: 0.3em;
+}
+.logo, #home, #sign-up {
+    padding-right: 3px;
+    background-color: var(--sc-effect-color);
+    border-radius: 5px;
+    padding: 0.2em;
+}
+.show{
+    max-width: 20em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+.slide{
+    width: 4em;
+    height: auto;
+    margin-right: 0.3em;
+    border: var(--sc-effect-color) 0.2em solid;
+}
+.slide2, .slide3{
+    width: 4em;
+    height: 4em;
+    border: var(--pr-bg-color) 0.2em solid;
+    margin-right: 0.3em;
+}
+
+/* media query */
+@media screen and (min-width: 300px) {
+    .nav-item, .access{
+        display: none;
+    }
+    #intro{
+        top: 0;
+        color: var(--sc-effect-color);
+        font-size: 3.5em;
+    }  
+}
+
+@media screen and (min-width:412px) {
+    #intro{
+        font-size: 4em;
+    }  
+} 
+
+@media screen and (min-width:768px) {
+    #intro{
+        /* border: #FB2576 2px solid; */
+        text-align: justify;
+    }
+    .nav-item, .access{
+        display: flex;
+    }  
+} 
