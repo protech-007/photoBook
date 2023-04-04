@@ -17,6 +17,7 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -72,7 +73,7 @@ li ,a:hover{
 a{
     text-decoration: none;
 }
-
+ /* background image */
 
 .photo{
     display: block;
@@ -88,6 +89,8 @@ a{
     padding-left: 25px;
     padding-bottom: 0.3em;
 }
+
+/* effect on nav bar */
 .logo, #home, #sign-up {
     padding-right: 3px;
     background-color: var(--sc-effect-color);
@@ -117,6 +120,53 @@ a{
     border: var(--pr-bg-color) 0.2em solid;
     margin-right: 0.3em;
 }
+
+/* sign up */
+
+h1{
+    color: var(--sc-effect-color);
+    font-size: 2.5em;
+    bottom: 0;
+    padding-left: 0.2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: var(--pr-effect-color) 2px solid;
+    padding: 10px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6px;
+    border-radius: 5%;
+    padding-left: 10px;
+    outline: none;
+    box-shadow: 0 1px 5px 1px var(--sc-effect-color);
+}
+form a{
+    font-size: 0.9em;
+}
+#submit{
+    max-width: 80px;
+    height: 30px;
+    padding-right:7px;
+    background-color: var(--sc-effect-color);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* login */
+
+
+
+/* media for medium screen */
 @media screen and (max-width:412px) {
     #intro{
        position: relative;
@@ -124,6 +174,7 @@ a{
     }
 }
 
+/* media for small screen */
 @media screen and (max-width:360px) {
     #intro{
         margin-top: 0;

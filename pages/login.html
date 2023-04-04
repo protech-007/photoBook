@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>login</title>
 </head>
 <body>
-    <h1>login</h1>
-    <a href="../index.html">Home</a>
+    <main>
+        <nav class="container"id="nav-bar">
+            <img class="logo" src="../images/logo/stock-vector-icon-pocket-digital-camera-784607662_adobe_express.png" alt="camera">
+            <ul class="nav-item">
+                <li><a id="home" href="../index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="access">
+                <li><a href="pages/">login</a></li>
+                <li><a id="sign-up" href="sign_up.html">sign up</a></li>
+            </ul>
+        </nav>
+        <h1 class="container">
+            THE<br> BERRY'S <br>PHOTO BOOK
+        </h1>
+        <form action="" method="post">
+            <input type="email" name="email" placeholder="Enter email">
+            <input type="password" name="password" placeholder="Enter password">
+            <input id="submit" type="submit" value="login">
+            <a href="sign_up.html">sign up: i don't have an account</a>
+        </form>
+    </main>
 </body>
 </html>
