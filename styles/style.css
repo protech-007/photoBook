@@ -144,7 +144,7 @@ form{
 input{
     width: 100%;
     height: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     border-radius: 5%;
     padding-left: 10px;
     outline: none;
@@ -166,22 +166,39 @@ form a{
 
 
 
-/* media for medium screen */
-@media screen and (max-width:412px) {
+/* media for mobil screen */
+@media screen and (max-width:480px) {
     #intro{
        position: relative;
-       margin-top: 2em;
+       margin-top: 0;
+       margin-left: 0;
     }
     form{
-        margin-top: 2em;
+        margin-top: 4em;
     }
 }
 
-/* media for small screen */
-@media screen and (max-width:360px) {
+/* media for ipads/tablet screen */
+@media screen and (max-width:768px) {
     #intro{
-        margin-top: 0;
-        margin-left: 1em;
-        font-size: 2em;
+        position: absolute;
+        bottom: 0;
+        font-size: 3em;
+    }
+    form{
+        margin-top: 8em;
+    }
+}
+
+/* media query for laptops */
+
+@media screen and (max-width:1024px) {
+    #intro{
+        position: relative;
+        bottom: 0;
+        font-size: 3em;
+    }
+    form{
+        margin-top: 8em;
     }
 }
