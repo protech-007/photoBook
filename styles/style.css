@@ -81,8 +81,8 @@ a{
     right: 0; 
 }
 #intro{
-    color: var(--font-color);
-    font-size: 2.5em;
+    color: var(--sc-effect-color);
+    font-size: 3em;
     position: absolute;
     bottom: 0;
     padding-left: 25px;
@@ -117,31 +117,17 @@ a{
     border: var(--pr-bg-color) 0.2em solid;
     margin-right: 0.3em;
 }
-
-/* media query */
-@media screen and (min-width: 300px) {
-    .nav-item, .access{
-        display: none;
-    }
+@media screen and (max-width:412px) {
     #intro{
-        top: 0;
-        color: var(--sc-effect-color);
-        font-size: 3.5em;
-    }  
+       position: relative;
+       margin-top: 2em;
+    }
 }
 
-@media screen and (min-width:412px) {
+@media screen and (max-width:360px) {
     #intro{
-        font-size: 4em;
-    }  
-} 
-
-@media screen and (min-width:768px) {
-    #intro{
-        /* border: #FB2576 2px solid; */
-        text-align: justify;
+        margin-top: 0;
+        margin-left: 1em;
+        font-size: 2em;
     }
-    .nav-item, .access{
-        display: flex;
-    }  
-} 
+}
